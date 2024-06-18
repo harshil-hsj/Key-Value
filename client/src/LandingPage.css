@@ -1,0 +1,367 @@
+/* Ensure the body and html take full height */
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: Arial, sans-serif; 
+}
+
+/* Outermost div styling */
+.outmost-div {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: grey;
+position: relative; 
+height: 100vh;
+width: 100%;
+overflow: hidden; 
+}
+
+
+.background-image {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+
+.content {
+position: relative;
+z-index: 1; 
+text-align: center;
+color: white; 
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px; 
+max-width: 90%; 
+box-sizing: border-box;
+}
+.content h1{
+color: white;
+}
+
+.buttons {
+display: flex;
+flex-direction: row; 
+align-items: center; 
+justify-content: center; 
+gap: 10px; 
+margin-top: 20px;
+flex-wrap: wrap; 
+}
+
+
+.buttons button {
+margin: 10px;
+padding: 10px 20px;
+font-size: 16px;
+background-color: blue; 
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: white;
+flex: 1 1 auto; 
+}
+
+.buttons button :hover
+{
+background-color: black; 
+}
+
+.outmost-div .navbar{
+display: flex;
+justify-content: flex-start;
+position: absolute;
+top: 0px;
+background-color: white;
+border-radius: 8px;
+padding: 10px;
+width: 100%;
+}
+
+.navbar .ul1{
+list-style: none;
+display: inline;
+flex-direction: row;
+margin-right: auto;
+gap: 2px;
+margin: 0; 
+padding: 0; 
+}
+.navbar .ul1 .navbarKey{
+height: 60px;
+margin: 2px ;
+padding: 2px;
+}
+.navbar .ul1 .logo{
+height: 70px;
+margin: 2px ;
+padding: 2px;
+}
+
+.navbar .ul2 {
+display: flex;
+flex-direction: row;
+margin: 0;
+padding: 0;
+margin-left: auto; 
+gap: 20px; 
+}
+
+.navbar .ul2 li {
+display: inline;
+color: black !important;
+margin: 10px ;
+padding: 10px;
+}
+.navbar .ul2 li a {
+  color: black !important;
+}
+.navbar .ul2 li a:hover{
+  color: green !important;
+}
+@media (max-width: 773px) {
+  .outmost-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+    }
+    
+    
+    .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    
+    .content {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    max-width: 90%; 
+    box-sizing: border-box;
+    }
+    .content h1{
+    color: white;
+    }
+    
+    .buttons {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    }
+    .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    flex: 1 1 auto; 
+    }
+    .buttons button :hover
+    {
+    background-color: black; 
+    }
+    .outmost-div .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    height: fit-content;
+    top: 0px;
+    background-color:white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    }
+    .navbar .ul1{
+    list-style: none;
+    display: inline;
+    flex-direction: row;
+    margin-right: auto;
+    gap: 2px;
+    margin: 0; 
+    padding: 0; 
+    }
+    .navbar .ul1 .navbarKey{
+    height: 70px;
+    margin: 2px ;
+    padding: 2px;
+    }
+    .navbar .ul1 .logo{
+    height: 70px;
+    margin: 2px ;
+    padding: 2px;
+    }
+    
+    .navbar .ul2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 10px; 
+    }
+    
+    .navbar .ul2 li {
+    display: inline;
+    color: black !important;
+    margin: 10px ;
+    padding: 5px;
+    }
+    .navbar .ul2 li a {
+      color: black !important;
+    }
+    .navbar .ul2 li a:hover{
+      color: green !important;
+    }
+}
+@media (max-width: 584px) {
+  .outmost-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+    }
+    .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .content {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+    max-width: 90%; 
+    box-sizing: border-box;
+    }
+    .content h1{
+      font-size: 1.2rem;
+    color: white;
+    }
+    .buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    }
+    .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    flex: 1 1 auto; 
+    }
+    .buttons button :hover
+    {
+    background-color: black; 
+    }
+    .outmost-div .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    height: fit-content;
+    top: 0px;
+    background-color:white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    }
+    .navbar .ul1{
+    list-style: none;
+    display: inline;
+    flex-direction: row;
+    margin-right: auto;
+    gap: 2px;
+    margin: 0; 
+    padding: 0; 
+    }
+    .navbar .ul1 .navbarKey{
+    height: 70px;
+    margin: 2px ;
+    padding: 2px;
+    }
+    .navbar .ul1 .logo{
+    height: 70px;
+    margin: 2px ;
+    padding: 2px;
+    }
+    
+    .navbar .ul2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    gap: 5px; 
+    }
+    
+    .navbar .ul2 li {
+    display: inline;
+    color: black !important;
+    margin: 10px ;
+    padding: 1px;
+    }
+    .navbar .ul2 li a {
+      color: black !important;
+    }
+    .navbar .ul2 li a:hover{
+      color: green !important;
+    }
+}
+

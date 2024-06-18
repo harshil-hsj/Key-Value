@@ -1,0 +1,290 @@
+.info-background{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+    background-color:greenyellow;
+    width: 100%;
+    align-items: center;
+    place-items: center;
+    justify-content: flex-start;
+    background-image: url('./lock.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.info-background h2{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.info-background p{
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.info-background .boxes{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.info-background .boxes .retrievepassword{
+    display: grid;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border: grey;
+    padding: 5px;
+}
+.info-background .boxes .retrievepassword .answer .p-{
+  color: green !important;
+}
+.info-background .boxes .retreivepassword input{
+    align-self: center;
+    width: 50%;
+    height: fit-content;
+}
+.info-background .boxes .retrievepassword button{
+    align-self: center;
+    width: 55%;
+    font-size: 0.6rem;
+    height:fit-content;
+}
+.info-background .boxes .retrievepassword .answer button{
+    width: 95%;
+    align-self: center;
+}
+.info-background .boxes .addpassword{
+  
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    width: 50%;
+    background-color: whitesmoke;
+    border: aquamarine;
+    padding: 5px;
+}
+.info-background .boxes .addpassword button{
+    width: 50%;
+    font-size: 0.6rem;
+}
+@media(max-width:949px){
+    .info-background{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        background-color:greenyellow;
+        width: 100%;
+        align-items: center;
+        place-items: center;
+        justify-content: flex-start;
+        background-image: url('./lock.jpg'); 
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .info-background h2{
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .info-background p{
+        position: relative;
+        margin-top: 20px;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info-background .boxes{
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: auto;
+        flex-direction: column;
+        height: 50%;
+        width: 60%;
+        margin-bottom: 20px;
+        align-self: center;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-background .boxes .retrievepassword{
+        display: grid;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border: grey;
+        padding: 5px;
+    }
+    .info-background .boxes .retrievepassword input{
+        align-self: center;
+        width: 35% ;
+        height: fit-content;
+    }
+    .info-background .boxes .retrievepassword button{
+        width: 35%;
+    }
+    .info-background .boxes .retrievepassword .answer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        background-color:whitesmoke;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-background .boxes .retrievepassword .answer button{
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        width: 35%;
+        height:fit-content;
+    }
+
+    .info-background .boxes .addpassword{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-color: whitesmoke;
+        border: aquamarine;
+        padding: 5px;
+    }
+    .info-background .boxes .addpassword input{
+        width: 35%;
+        margin-bottom: 2px;
+    }
+    .info-background .boxes .addpassword button{
+        width: 35%;
+    font-size: 0.6rem;
+    }
+}
+@media(max-width:600px){
+    .info-background{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        background-color:greenyellow;
+        width: 100%;
+        align-items: center;
+        place-items: center;
+        justify-content: flex-start;
+        background-image: url('./lock.jpg'); 
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .info-background h2{
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .info-background p{
+        position: relative;
+        margin-top: 20px;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info-background .boxes{
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: auto;
+        flex-direction: column;
+        height: 50%;
+        width: 60%;
+        margin-bottom: 20px;
+        align-self: center;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-background .boxes .retrievepassword{
+        display: grid;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border: grey;
+        padding: 5px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .info-background .boxes .retrievepassword input{
+        align-self: center;
+        width: 70% ;
+        height: fit-content;
+    }
+    .info-background .boxes .retrievepassword button{
+        font-size: 0.6rem;
+        width: 70%;
+    }
+    .info-background .boxes .retrievepassword .answer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        background-color:whitesmoke;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-background .boxes .retrievepassword .answer button{
+        align-self: center;
+        justify-content: center;
+        height: fit-content;
+        justify-items: center;
+        width: 70%;
+        height:fit-content;
+    }
+
+    .info-background .boxes .addpassword{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-color: whitesmoke;
+        border: aquamarine;
+        padding: 5px;
+    }
+    .info-background .boxes .addpassword input{
+        width: 70%;
+        margin-bottom: 2px;
+    }
+    .info-background .boxes .addpassword button{
+        width: 35%;
+        width: 70%;
+    font-size: 0.6rem;
+    }
+}

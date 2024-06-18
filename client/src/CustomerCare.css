@@ -1,0 +1,35 @@
+.cc-background{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.cc-background h1{
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: auto;
+}
+.cc-background .buttons {
+    display: grid;
+    position: relative;
+    border: 5px;
+    border-radius: 3px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    height: 40%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:530px){
+    .cc-background .buttons{
+        width: 70%;
+    }
+    .cc-background .buttons button{
+        font-size: 0.8rem;
+    }
+}

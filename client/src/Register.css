@@ -1,0 +1,221 @@
+.signup{
+  display: flex;
+  /* margin: 20px auto;  */
+  /* padding: 20px; */
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  background-color:blue;
+  height: 100vh;
+  z-index: 1;
+  width: 100%; /* Make the login form take up 90% of the screen width */
+}
+.signup .background-image{
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.signup .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 30%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+  .signup .container h2{
+    color: black;
+  }
+  .signup .container .inputusername,
+  .signup .container .inputpassword {
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .signup .container .inputusername:focus,
+  .signup .container .inputpassword:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .signup .container button {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(107, 149, 183);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup .container button:hover {
+    background-color: black;
+  }
+  
+  .signup .container button {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  @media(max-width:1030px){
+    .signup{
+      display: flex;
+      /* margin: 20px auto;  */
+      /* padding: 20px; */
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 5px;
+      background-color:blue;
+      height: 100vh;
+      z-index: 1;
+      width: 100%; /* Make the login form take up 90% of the screen width */
+    }
+    .signup .background-image{
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    .signup .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      width: 40%;
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+      .signup .container h2{
+        color: black;
+      }
+      .signup .container .inputusername,
+      .signup .container .inputpassword {
+        align-items: center;
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      
+      .signup .container .inputusername:focus,
+      .signup .container .inputpassword:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+      
+      .signup .container button {
+        width: 30%;
+        padding: 10px;
+        background-color: rgb(107, 149, 183);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .signup .container button:hover {
+        background-color: black;
+      }
+      
+      .signup .container button {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+  }
+  @media(max-width:774px){
+    .signup{
+      display: flex;
+      /* margin: 20px auto;  */
+      /* padding: 20px; */
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 5px;
+      background-color:blue;
+      height: 100vh;
+      z-index: 1;
+      width: 100%; /* Make the login form take up 90% of the screen width */
+    }
+    .signup .background-image{
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    .signup .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      width: 50%;
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+      .signup .container h2{
+        font-size: 1.2rem;
+        color: black;
+      }
+      .signup .container .inputusername,
+      .signup .container .inputpassword {
+        align-items: center;
+        width: 70%;
+        height: fit-content;
+        font-size: 0.7rem;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      
+      .signup .container .inputusername:focus,
+      .signup .container .inputpassword:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+      
+      .signup .container button {
+        width: 40%;
+        padding: 5px;
+        background-color: rgb(107, 149, 183);
+        font-size: 0.8rem;
+        color: #fff;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .signup .container button:hover {
+        background-color: black;
+      }
+      
+      .signup .container button {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+  }

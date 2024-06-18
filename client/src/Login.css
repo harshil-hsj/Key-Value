@@ -1,0 +1,320 @@
+
+.background {
+  display: flex;
+  background-color: grey; /* Fallback background color */
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  overflow: hidden; /* Ensures no overflow is visible */
+  position: relative; /* Required for absolute positioning */
+}
+
+.background .background-image {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 50%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.background .animated-heading {
+  color: white;
+  font-family: 'Courier', monospace; /* You can use any font you prefer */
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #000; /* The cursor */
+  width: 0; /* Initial width is 0 to start the typing effect */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.background .animated-heading.start-animation {
+  animation: typing 7s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Additional class to stop the cursor blinking after typing animation */
+.background .animated-heading.finished-animation {
+  border-right: none;
+}
+
+
+ .background .login {
+  justify-self: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color:whitesmoke;
+  height: fit-content;
+  width: 30%; 
+  margin-right:auto;
+  margin-left: 20px;
+  margin-bottom: auto;
+}
+
+.background .login .container{
+  z-index: 1;
+  background-color: whitesmoke;
+  justify-content: center;
+  display: grid;
+  place-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.background .login .container h2 {
+  position:relative;
+  top: 0px; 
+  text-align: center;
+  color: #333;
+}
+
+.background .login .container .inputusername,
+.background .login .container .inputpassword {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.background .login .container .inputusername:focus,
+.background .login .container .inputpassword:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.background .login .container button {
+  width: 50%;
+  padding: 10px;
+  background-color:rgb(107, 149, 183) ;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.background .login .container button:hover {
+  background-color: black;
+}
+
+.background .login .container button{
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+@media (max-width:831px){
+  .background {
+    display: flex;
+    background-color: grey; /* Fallback background color */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    overflow: hidden; /* Ensures no overflow is visible */
+    position: relative; /* Required for absolute positioning */
+  }
+  .background .background-image {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 50%; }
+  }
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  .background .animated-heading {
+    color: white;
+    font-family: 'Courier', monospace; /* You can use any font you prefer */
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #000; /* The cursor */
+    width: 0; /* Initial width is 0 to start the typing effect */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  .background .animated-heading.start-animation {
+    animation: typing 7s steps(40, end) forwards, blink 0.75s step-end infinite;
+  }
+  /* Additional class to stop the cursor blinking after typing animation */
+  .background .animated-heading.finished-animation {
+    border-right: none;
+  }
+   .background .login {
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:whitesmoke;
+    height: 40%;
+    width: 30%; 
+    margin-right:auto;
+    margin-left: 20px;
+    margin-bottom: auto;
+  }
+  .background .login .container{
+    z-index: 1;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    height: 50%;
+    width: 100%;
+  }
+  .background .login .container h2 {
+    position:relative;
+    top: 0px; 
+    text-align: center;
+    color: #333;
+  }
+  .background .login .container .inputusername,
+  .background .login .container .inputpassword {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+  .background .login .container .inputusername:focus,
+  .background .login .container .inputpassword:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  .background .login .container button {
+    width: 50%;
+    padding: 5px;
+    background-color:rgb(107, 149, 183) ;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .background .login .container button:hover {
+    background-color: black;
+  }
+  .background .login .container button{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+@media (max-width:505px){
+  .background {
+    display: flex;
+    background-color: grey; /* Fallback background color */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    overflow: hidden; /* Ensures no overflow is visible */
+    position: relative; /* Required for absolute positioning */
+  }
+  .background .background-image {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 50%; }
+  }
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  .background .animated-heading {
+    color: white;
+    font-family: 'Courier', monospace; /* You can use any font you prefer */
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #000; /* The cursor */
+    width: 0; /* Initial width is 0 to start the typing effect */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  .background .animated-heading.start-animation {
+    animation: typing 7s steps(40, end) forwards, blink 0.75s step-end infinite;
+  }
+  /* Additional class to stop the cursor blinking after typing animation */
+  .background .animated-heading.finished-animation {
+    border-right: none;
+  }
+   .background .login {
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:whitesmoke;
+    height: 30%;
+    width: 40%; 
+    margin-right:auto;
+    margin-left: 20px;
+    margin-bottom: auto;
+  }
+  .background .login .container{
+    z-index: 1;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+  .background .login .container h2 {
+    position:relative;
+    font-size: 1.2em;
+    top: 0px; 
+    margin-bottom: auto;
+    text-align: center;
+    color: #333;
+  }
+  .background .login .container .inputusername,
+  .background .login .container .inputpassword {
+    width: 90%;
+    padding: 1px;
+    margin-bottom: 1px;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+  .background .login .container .inputusername:focus,
+  .background .login .container .inputpassword:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  .background .login .container button {
+    width: 35%;
+    height: fit-content;
+    padding: 1px;
+    background-color:rgb(107, 149, 183) ;
+    font-size: 0.8em;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .background .login .container button:hover {
+    background-color: black;
+  }
+  .background .login .container button{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
