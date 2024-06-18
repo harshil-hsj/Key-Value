@@ -25,7 +25,7 @@ db.connect(function (err) {
     console.log('Connection established');
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const algorithm = 'aes-256-ctr';
 const secretKey = crypto.createHash('sha256').update(String(process.env.SECRET_KEY)).digest('base64').substr(0, 32);
 app.listen(PORT, () => {
